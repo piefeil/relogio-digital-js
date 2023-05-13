@@ -1,0 +1,62 @@
+/*Importa uma fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,600&display=swap');
+
+/*Seleciona todos os elementos do CSS, ajuda a zerar a formatação inicial que vem com alguns elemetos*/
+* {
+    /*Não terá o espaçamento inicial nem do padding nem da margin*/
+    margin: 0;
+    padding: 0;
+    /*Importar a fonte escolhida, se coloca as duas fontes porque caso o navegador da pessoa não reconheça a fonte escolhida */
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body {
+    /*coloca a altura em 100*/
+    height: 100vh;
+    /*fazer um gradiente de 120 graus de duas cores*/
+    background: linear-gradient(180deg, #2E9CB3, #A87548 );
+    /*Centralizando*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Forma como ficam as letras e o retângulo transparente de fundo*/
+.relogio {
+    display: flex;
+    align-items: center;
+    /*O space-around é usado para espaçar as palavras umas das outras*/
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, .5);
+}
+
+/*Configurar os quadradinhos*/
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    /*Coloca os elementos um em cima do outro 00 e horas, display-flex padrão vem um do lado do outro.*/
+    flex-direction: column;
+    /*Para centralizar os elementoss*/
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border: 7px;
+    /*Espaço entre as letras*/
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.relogio span.tempo {
+    font-size: 15px;
+}
